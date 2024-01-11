@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Rubik:wght@400;500;600&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+}
+.nav-item .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+.nav-item:hover .nav-link {
+  color: #ff8800 !important;
+}
+.header-contact {
+  color: #fff;
+  line-height: 1.2;
+}
+.contact-number {
+  font-size: 1.75rem;
+}
+.hero {
+  background-image: url(../img/hero-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.hero-content {
+  color: #fff;
+  max-width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 26%;
+}
+.hero-title {
+  font-size: 7.2rem;
+}
+.hero-title span {
+  color: #ff8800;
+  font-size: 8.5rem;
+}
+.hero-text {
+  font-size: 1.8rem;
+}
+.btn-outline {
+  border: 1px solid #fff;
+  padding: 12px 30px;
+  display: inline-block;
+  color: inherit;
+}
+.btn-outline:hover {
+  background-color: #ff8800;
+  border: transparent;
+}
+.hero-shape {
+  position: absolute;
+  /* z-index: -1; */
+  animation: move 2s ease-in-out infinite alternate;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.hero .shape-1 {
+  top: 100px;
+  left: 45px;
+}
+.hero .shape-2 {
+  bottom: 80px;
+  right: 30px;
+}
