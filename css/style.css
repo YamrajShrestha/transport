@@ -21,13 +21,9 @@ ul {
 a {
   text-decoration: none !important;
 }
-.section{
+.section {
   margin: 100px 100px;
 }
-
-
-
-
 
 /* header  */
 .navbar .navbar-brand {
@@ -49,10 +45,6 @@ a {
 .contact-number {
   font-size: 1.75rem;
 }
-
-
-
-
 
 /* hero */
 .hero {
@@ -111,10 +103,6 @@ a {
   bottom: 80px;
   right: 30px;
 }
-
-
-
-
 
 /* about  */
 .about .img-holder {
@@ -177,7 +165,7 @@ a.btn {
   padding-block: 10px;
   padding-inline: 30px 60px;
 }
-a.btn:hover{
+a.btn:hover {
   background-color: #ff8800;
   color: #fff;
 }
@@ -206,12 +194,9 @@ a.btn:hover{
   z-index: -1;
 }
 
-
-
-
-
 /* service */
-.service {
+.service,
+.project {
   background-color: #f0f9ff;
 }
 .service-card {
@@ -242,11 +227,7 @@ a.btn:hover{
   color: #ff8800 !important;
 }
 
-
-
-
-
-/* blog  */
+/* feature  */
 .feature-card {
   position: relative;
   padding: 30px;
@@ -308,4 +289,168 @@ a.btn:hover{
   max-width: max-content;
   margin-inline: auto;
   padding: 10px 18px;
+}
+
+/* project  */
+.project-card {
+  position: relative;
+}
+.project-card .action-btn {
+  background-color: #ff8800;
+  border: transparent;
+  color: #fff;
+  font-size: 28px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+.project-card:is(:hover, :focus-within) .action-btn {
+  opacity: 1;
+}
+.project-card .card-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-block-start: -50px;
+  margin-inline-start: 30px;
+}
+.project-card .card-tag {
+  color: #ff8800;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.project-card .card-title {
+  color: rgb(11, 46, 66);
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+}
+.project-card .card-link {
+  color: rgb(11, 46, 66);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-block-start: 5px;
+  transition: 0.25s ease;
+}
+.project-card :is(.card-title, .card-link):is(:hover, :focus) {
+  color: #ff8800;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hydrated {
+  visibility: inherit;
+}
+
+/* blog  */
+.blog-card .card-content {
+  position: relative;
+}
+.blog-card .card-title {
+  font-size: 22px;
+}
+.blog-card a {
+  color: #0b2e42;
+}
+.blog-card .card-text {
+  color: #3d3d3d;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+}
+.blog-card .btn-link span {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  color: #ff8800;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.blog-card .card-meta {
+  background-color: #0b2e42;
+  color: #fff;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: max-content;
+  margin-inline: auto 20px;
+  margin-block: -130px 10px;
+  padding: 20px 25px;
+  box-shadow: -8px 8px 0 #ff8800;
+}
+time {
+  display: block;
+}
+.blog-card .card-meta span {
+  color: #ff8800;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.75;
+  display: block;
+}
+
+/* newsletter  */
+.newsletter {
+  background-color: #ff8800;
+}
+/* @media (min-width: 992px) {
+  .newsletter .newsletter-banner {
+    bottom: -30px;
+  }
+}
+@media (min-width: 768px) {
+  .newsletter .newsletter-banner {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    margin-block-end: 0;
+  }
+} */
+.newsletter {
+  position: relative;
+}
+.newsletter-banner {
+  position: absolute;
+  bottom: -16px;
+}
+.newsletter .img-holder {
+  background-color: transparent;
+  max-width: max-content;
+}
+.newsletter-content {
+  max-width: 840px;
+  margin-inline-start: auto;
+}
+.email-field {
+  background-color: #fff;
+  color: hsl(210, 11%, 15%);
+  font-size: 1.4rem;
+  height: 65px;
+  padding-inline: 20px;
+  margin-block-end: 10px;
+  outline: none;
+  transition: 0.25s ease;
+}
+input {
+  width: 100%;
+  background: none;
+  border: none;
+}
+.newsletter-btn {
+  background-color: rgb(11, 46, 66);
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  padding: 10px 30px;
+  border: transparent;
 }
